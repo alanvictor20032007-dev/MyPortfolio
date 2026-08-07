@@ -1,89 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- SEO Meta Tags -->
     <title>Alan Victor| Information Science Engineer Portfolio</title>
-    <meta name="description" content="Full-stack web developer specializing
-          in React and Node.js. Available for freelance projects.">
-    <meta name="keywords" content="data analysis ,web developer, React, JavaScript, portfolio">
-    <meta name="author" content="Alan Victor">
- 
-    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
-    <meta property="og:title" content="Alan Victor| Information Science Engineer">
-    <meta property="og:description" content="Check out my portfolio and projects!">
-    <meta property="og:image" content="LINKEDIN PFP.jpeg">
-    <meta property="og:url" content="https://alanvictor.com">
-    <meta property="og:type" content="website">
- 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Alan Victor| Information Science Engineer">
-    <meta name="twitter:description" content="Check out my portfolio!">
- 
- 
-</head>
-<body>
-  <nav>
-    <a href="">About</a>
-    <a href="">Skills</a>
-    <a href="">Projects</a>
-    <a href="">Contact</a>
-  </nav>
-  <header>
-    <h1>Hi , I am Alan Victor . Welcome to My Portfolio</h1>
-    <p> I am a passionate  Information Science Engineer from Bengaluru .</p>
-    <a href=""> HIRE ME</a>
-    </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="" alt="alan image">
-      <p> I love working and finding patterns in data to problem solve and I also love unleashing my creativity using web development.</p>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>C programming</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
-    <section>
-      <h2> MY PROJECTS</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p> Description of Project 1</p>
-        <a href="">View Project</a>
-        </div>
-    </section>
-    <section>
-      <h2>Contact Me</h2>
-      <h3> Have a project in mind? </h3>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" placeholder="Your Name" required name="name" id="name">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Your Email" required name="email" id="email">
-        <label for="Criteria">Criteria:</label>
-        <select name="domain" id="domain">
-          <option value="web development">Web Development</option>
-          <option value="data science">Data Science</option>
-          <option value="other">Other</option>
-        </select>
-        <label for="other">Other</label>
-        <textarea name="other" id="other" placeholder="Your Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    <a href="mailto:alan20032007@gmail.com">EMAIL ME </a>
-    <footer>
-      <p>&copy; 2026 ALAN VICTOR . ALL RIGHTS RESERVED</p>
-    </footer>
-  
+    <meta
+      name="description"
+      content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects."
+    />
+    <meta
+      name="keywords"
+      content="data analysis ,web developer, React, JavaScript, portfolio"
+    />
+    <meta name="author" content="Alan Victor" />
 
-</body>
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta
+      property="og:title"
+      content="Alan Victor| Information Science Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Check out my portfolio and projects!"
+    />
+    <meta property="og:image" content="LINKEDIN PFP.jpeg" />
+    <meta property="og:url" content="https://alanvictor.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Alan Victor| Information Science Engineer"
+    />
+    <meta name="twitter:description" content="Check out my portfolio!" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">AV</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          title="Toggle Dark Mode"
+          aria-label="Toggle dark mode"
+        >
+          Toggle Dark
+        </button>
+        <button
+          class="Menu Toggle"
+          aria-label="toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section" id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p class="tagline">
+          I am a passionate Information Science Engineer from Bengaluru .
+        </p>
+        <div class="hero-button">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <figure class="'profile-figure">
+            <img
+              src="LINKEDIN PFP.jpeg"
+              alt="alan image"
+              width="150"
+              height="200"
+            />
+            <figcaption>Alan Victor</figcaption>
+          </figure>
+
+          <div class="about-text">
+            <p>
+              I love working and finding patterns in data to problem solve and I
+              also love unleashing my creativity using web development.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item" data-level="90">Python</div>
+          <div class="skill-item" data-level="85">C programming</div>
+          <div class="skill-item" data-level="80">HTML</div>
+          <div class="skill-item" data-level="85">CSS</div>
+          <div class="skill-item" data-level="80">JavaScript</div>
+        </div>
+      </section>
+      <section id="projects" class="project-section">
+        <h2>MY PROJECTS</h2>
+        <div class="project-grid">
+          <h3>Project 1</h3>
+          <article class="project-card" data-category="web">
+            <img src="weather.jpg" alt="weather project" widht="300px" />
+            <h3>Weather App</h3>
+            <p>Real-time weather information application.</p>
+            <div class="project-tag">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+            </div>
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn">Github</a>
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <h3>Have a project in mind?</h3>
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              placeholder=" Enter Your Email"
+              required
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+<label for="Subject">Subject:</label>
+          <select name="subject" id="subject">
+            <option value=""> Select an option</option>
+            <option value="web development">Web Development</option>
+            <option value="data science">Data Science</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="other">Other</label>
+          <textarea
+            name="other"
+            id="other"
+            placeholder="Your Message"
+          ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <br />
+      </section>      
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 ALAN VICTOR . ALL RIGHTS RESERVED</p>
+      <nav aria-label="Social Links">
+        <a href="" target="_blank">LinkedIn</a>
+        <a href="" target="_blank" >Github</a>
+        <a href="mailto:alan20032007@gmail.com"
+        >You can reach me at my E-maill Address here.
+      </a>
+      </nav>
+    </footer>
+  </body>
 </html>
