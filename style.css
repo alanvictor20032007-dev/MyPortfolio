@@ -9,6 +9,8 @@
     --text:#2c3E50;
     --light:#f4f6f8;
     --white:#FFFFFF;   
+    --hero-gradient-start:rgb(68, 96, 110);
+    --hero-gradient-end:rgb(217,219,222);
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
@@ -51,7 +53,8 @@ body{
     color:var(--accent);
 }
 .hero-section{
-    background:linear-gradient(135deg,var(--primary,rgb(77, 166, 196))) ;
+    /* background:linear-gradient(135deg,var(--primary,rgb(227, 229, 230))) ; */
+    background:linear-gradient(000deg,var(--primary),var(--hero-gradient-start));
     color:var(--white);
     text-align: center;
     padding: 100px 5%;
@@ -79,5 +82,62 @@ body{
     font-weight: bold;
     font-size: 1.1rem;
     margin-left: 50px;
+    transition: all 0.2s;
 
+}
+.skill-item:hover{
+    transform: translateY(-8px);
+    box-shadow:0 4px 15px rgba(0,0,0,0.602) ;
+}
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+.project-card{
+    background-color: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+
+}
+.project-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.602);
+}
+.project-card img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+.btn{
+    display:inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:1em;
+    border: 2px solid transparent;
+
+}
+.btn-primary{
+    background-color: var(--accent);
+    color:white
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--accent);
+    color:var(--accent);
+}
+.btn-secondary{
+    background-color: var(--white);
+    color:var(--primary);
+}
+.btn-secondary:hover{
+    background-color:transparent ;
+    border-color: var(--white);
+    color: var(--white);
 }
